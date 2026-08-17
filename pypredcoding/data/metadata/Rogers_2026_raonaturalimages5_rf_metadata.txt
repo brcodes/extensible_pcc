@@ -1,0 +1,15 @@
+# SPCC receptive-field overlap metadata
+# Saved alongside tiled datasets for input-space reconstruction during plotting.
+dataset_name='Rogers_2026_raonaturalimages5'
+rf1_x=16
+rf1_y=16
+rf1_offset_x=8
+rf1_offset_y=8
+rf1_layout_x=15
+rf1_layout_y=15
+ntiles_per_input=225
+flat_input=True
+use_mask=True
+gauss_mask_sigma=1.0
+image_filter='DoG'
+raw_dir='images_rao_128x128'

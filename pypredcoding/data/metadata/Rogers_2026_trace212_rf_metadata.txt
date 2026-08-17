@@ -1,0 +1,15 @@
+# SPCC receptive-field overlap metadata
+# Saved alongside tiled datasets for input-space reconstruction during plotting.
+dataset_name='Rogers_2026_trace212'
+rf1_x=36
+rf1_y=24
+rf1_offset_x=32
+rf1_offset_y=20
+rf1_layout_x=4
+rf1_layout_y=4
+ntiles_per_input=16
+flat_input=True
+use_mask=False
+gauss_mask_sigma=1.0
+image_filter='DoG'
+raw_dir='trace212'

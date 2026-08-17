@@ -1,0 +1,19 @@
+BD2016 Behavioral Word Report Accuracies CIs
+Low Clarity Neutral: [38.89, 47.62] Mean: 43.45 Error: [4.56, 4.17]
+Low Clarity Match: [75.2, 83.33] Mean: 79.17 Error: [3.97, 4.16]
+High Clarity Neutral: [80.56, 86.31] Mean: 83.53 Error: [2.97, 2.78]
+High Clarity Match: [86.91, 92.46] Mean: 89.68 Error: [2.77, 2.78]
+
+rPCC word report accuracies
+
+Acc | Low Clarity Neutral: 33.333
+Acc | Low Clarity Match: 75.0
+Acc | High Clarity Neutral: 83.333
+Acc | High Clarity Match: 100.0
+
+rPCC word report accuracies with 95% bootstrap CIs
+
+Acc+Err | Low Clarity Neutral: mean=33.333 ci=[33.071, 33.611] err=[0.262, 0.278]
+Acc+Err | Low Clarity Match: mean=75.000 ci=[74.753, 75.259] err=[0.247, 0.259]
+Acc+Err | High Clarity Neutral: mean=83.333 ci=[83.124, 83.543] err=[0.209, 0.209]
+Acc+Err | High Clarity Match: mean=100.000 ci=[100.000, 100.000] err=[0.000, 0.000]

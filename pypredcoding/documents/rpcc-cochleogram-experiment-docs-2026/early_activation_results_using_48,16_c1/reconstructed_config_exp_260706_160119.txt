@@ -1,0 +1,82 @@
+# ------------------------------------------------------------------
+#      TRAINING CONFIG FOR STATIC or RECURRENT PREDICTIVE CODING CLASSIFIER
+#      1. SHARED PARAMS 2. RPCC-SPECIFIC 3. SPCC-SPECIFIC
+# ------------------------------------------------------------------
+
+# ----------------------
+#       SHARED
+# ----------------------
+
+# MODEL TYPE
+model_type='recurrent'
+
+# EXPERIMENT METADATA
+notes='try to get 16 spectrograms to train'
+
+# INPUTS
+input_shape=(94,)
+num_inps=16
+num_classes=16
+dataset_train='tom_3phon3let_16set_nanpad.pydb'
+
+# TRAINING / HYPERPARAMETERS
+epoch_n=500
+seed_init=1
+seed_shuffle=1
+batch_size=1
+load_checkpoint=None
+save_checkpoint={'save_every':10}
+plot_train=True
+plot_softmaxed_activations=True
+kr={1:0.1, 2:2.5}
+kU={1:0.04, 2:0.1}
+rate_schedule=None
+
+# ARCHITECTURE
+num_layers=2
+hidden_lyr_sizes=[48]
+top_lyr_size=16
+classif_method='c1'
+activ_func='linear'
+update_method={'rW_seq_niters': 1}
+architecture='flat_hidden_lyrs'
+first_to_second_lyr_connection_architecture='structured'
+r_reset_mode='reset_from_single_sample'
+r_prior_dist=('pseudo_sparse_kurtotic',)
+r_prior_cost=None
+r_prior_cost_denominator=None
+U_prior_dist=('gaussian', 0.0, 0.1)
+U_prior_cost=None
+U_prior_cost_denominator=None
+softmax_type='stable'
+softmax_k=1
+
+# ----------------------
+#      RPCC ONLY
+# ----------------------
+
+# INPUTS
+num_ts=59
+
+# TRAINING / HYPERPARAMETERS
+kV={1:0.01, 2:0.01}
+ssqr={0:25, 1:10, 2:5}
+ssqV={1:1, 2:1}
+
+# ARCHITECTURE
+rc_topdown_cost_denominator=2
+softmax_k_eval=20
+
+# ----------------------
+#      SPCC ONLY
+# ----------------------
+
+# INPUTS
+ntiles_per_input=None
+flat_input=None
+
+# TRAINING / HYPERPARAMETERS
+ssq=None
+alph=None
+lam=None
+plot_receptive_fields=False

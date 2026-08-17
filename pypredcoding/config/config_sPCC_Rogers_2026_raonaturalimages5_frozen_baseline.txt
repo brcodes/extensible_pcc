@@ -1,0 +1,82 @@
+# ------------------------------------------------------------------
+#      TRAINING CONFIG FOR STATIC or RECURRENT PREDICTIVE CODING CLASSIFIER
+#      1. SHARED PARAMS 2. RPCC-SPECIFIC 3. SPCC-SPECIFIC
+# ------------------------------------------------------------------
+
+# ----------------------
+#       SHARED
+# ----------------------
+
+# MODEL TYPE
+model_type='static'
+
+# EXPERIMENT METADATA
+notes='Rogers/Li 2026 sPCC baseline- 5 natural images'
+
+# INPUTS
+input_shape=(225,256)
+num_inps=5
+num_classes=5
+dataset_train='Rogers_2026_raonaturalimages5.pydb'
+
+# TRAINING / HYPERPARAMETERS
+epoch_n=500
+seed_init=1
+seed_shuffle=1
+batch_size=1
+load_checkpoint=None
+save_checkpoint={'save_every':100}
+plot_train=True
+plot_softmaxed_activations=False
+kr={1:0.005, 2:0.005, 3:0.005}
+kU={1:0.005, 2:0.005, 3:0.005}
+rate_schedule=None
+
+# ARCHITECTURE
+num_layers=3
+hidden_lyr_sizes=[32,128]
+top_lyr_size=5
+classif_method='c1'
+activ_func='linear'
+update_method={'rW_instdeltas_niters':30}
+architecture='expand_first_lyr'
+first_to_second_lyr_connection_architecture='reshaped'
+r_reset_mode='reset_from_single_sample'
+r_prior_dist=('pseudo_sparse_kurtotic',)
+r_prior_cost='sparse_kurtotic'
+r_prior_cost_denominator=2
+U_prior_dist=('uniform_random', -0.5)
+U_prior_cost='sparse_kurtotic'
+U_prior_cost_denominator=2
+softmax_type='normal'
+softmax_k=1
+
+# ----------------------
+#      RPCC ONLY
+# ----------------------
+
+# INPUTS
+num_ts=None
+
+# TRAINING / HYPERPARAMETERS
+kV=None
+ssqr=None
+ssqV=None
+
+#ARCHITECTURE
+rc_topdown_cost_denominator=None
+softmax_k_eval=None
+
+# ----------------------
+#      SPCC ONLY
+# ----------------------
+
+# INPUTS
+ntiles_per_input=225
+flat_input=True
+
+# TRAINING / HYPERPARAMETERS
+ssq= {0:1, 1:10, 2:10, 3:10} 
+alph= {1:1.0, 2:0.05, 3:0.05} 
+lam= {1:0.02, 2:0.00001, 3:0.02}
+plot_receptive_fields={'mode': 'all'}

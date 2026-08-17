@@ -1,0 +1,58 @@
+Mean testing accuracy over 1 training runs, by checkpoint
+Testing protocol: accuracy is scored on a separate evaluation pass at each checkpoint, run before
+that epoch's training. Weights are frozen and the label input is zeroed, so classification reflects
+only what the learned weights extract from the input alone.
+95% CIs calculated using 10000 bootstraps each checkpoint
+51 checkpoints: 50 over 5000 epochs, saved every 100 eps, + 1 (epoch 1)
+
+Checkpoint 0 Epoch 1: 8.33 lowCI: 8.33 highCI: 8.33 lowErr: 0.00 highErr: 0.00
+Checkpoint 1 Epoch 100: 8.33 lowCI: 8.33 highCI: 8.33 lowErr: 0.00 highErr: 0.00
+Checkpoint 2 Epoch 200: 16.67 lowCI: 16.67 highCI: 16.67 lowErr: 0.00 highErr: 0.00
+Checkpoint 3 Epoch 300: 33.33 lowCI: 33.33 highCI: 33.33 lowErr: 0.00 highErr: 0.00
+Checkpoint 4 Epoch 400: 33.33 lowCI: 33.33 highCI: 33.33 lowErr: 0.00 highErr: 0.00
+Checkpoint 5 Epoch 500: 33.33 lowCI: 33.33 highCI: 33.33 lowErr: 0.00 highErr: 0.00
+Checkpoint 6 Epoch 600: 33.33 lowCI: 33.33 highCI: 33.33 lowErr: 0.00 highErr: 0.00
+Checkpoint 7 Epoch 700: 33.33 lowCI: 33.33 highCI: 33.33 lowErr: 0.00 highErr: 0.00
+Checkpoint 8 Epoch 800: 33.33 lowCI: 33.33 highCI: 33.33 lowErr: 0.00 highErr: 0.00
+Checkpoint 9 Epoch 900: 58.33 lowCI: 58.33 highCI: 58.33 lowErr: 0.00 highErr: 0.00
+Checkpoint 10 Epoch 1000: 58.33 lowCI: 58.33 highCI: 58.33 lowErr: 0.00 highErr: 0.00
+Checkpoint 11 Epoch 1100: 58.33 lowCI: 58.33 highCI: 58.33 lowErr: 0.00 highErr: 0.00
+Checkpoint 12 Epoch 1200: 58.33 lowCI: 58.33 highCI: 58.33 lowErr: 0.00 highErr: 0.00
+Checkpoint 13 Epoch 1300: 66.67 lowCI: 66.67 highCI: 66.67 lowErr: 0.00 highErr: 0.00
+Checkpoint 14 Epoch 1400: 75.00 lowCI: 75.00 highCI: 75.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 15 Epoch 1500: 75.00 lowCI: 75.00 highCI: 75.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 16 Epoch 1600: 83.33 lowCI: 83.33 highCI: 83.33 lowErr: 0.00 highErr: 0.00
+Checkpoint 17 Epoch 1700: 91.67 lowCI: 91.67 highCI: 91.67 lowErr: 0.00 highErr: 0.00
+Checkpoint 18 Epoch 1800: 91.67 lowCI: 91.67 highCI: 91.67 lowErr: 0.00 highErr: 0.00
+Checkpoint 19 Epoch 1900: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 20 Epoch 2000: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 21 Epoch 2100: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 22 Epoch 2200: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 23 Epoch 2300: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 24 Epoch 2400: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 25 Epoch 2500: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 26 Epoch 2600: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 27 Epoch 2700: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 28 Epoch 2800: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 29 Epoch 2900: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 30 Epoch 3000: 91.67 lowCI: 91.67 highCI: 91.67 lowErr: 0.00 highErr: 0.00
+Checkpoint 31 Epoch 3100: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 32 Epoch 3200: 91.67 lowCI: 91.67 highCI: 91.67 lowErr: 0.00 highErr: 0.00
+Checkpoint 33 Epoch 3300: 91.67 lowCI: 91.67 highCI: 91.67 lowErr: 0.00 highErr: 0.00
+Checkpoint 34 Epoch 3400: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 35 Epoch 3500: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 36 Epoch 3600: 91.67 lowCI: 91.67 highCI: 91.67 lowErr: 0.00 highErr: 0.00
+Checkpoint 37 Epoch 3700: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 38 Epoch 3800: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 39 Epoch 3900: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 40 Epoch 4000: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 41 Epoch 4100: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 42 Epoch 4200: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 43 Epoch 4300: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 44 Epoch 4400: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 45 Epoch 4500: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 46 Epoch 4600: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 47 Epoch 4700: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 48 Epoch 4800: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 49 Epoch 4900: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
+Checkpoint 50 Epoch 5000: 100.00 lowCI: 100.00 highCI: 100.00 lowErr: 0.00 highErr: 0.00
