@@ -1,5 +1,5 @@
-# Repository for Arbitrarily-Extensible Recurrent or Static Predictive Coding Classifier (rPCC or sPCC)
-## Upgrade to hard-coded (i.e., 'inextensible') legacy repo accepted for Rogers et al. 2026 (Neural Computation)
+# Arbitrarily-Extensible Recurrent or Static Predictive Coding Classifiers (rPCC or sPCC)
+## Upgrades hard-coded (i.e., 'inextensible') legacy repo accepted for Rogers et al. 2026 (Neural Computation)
 ## Extensible Models
 ### pypredcoding/
 
@@ -105,3 +105,11 @@ root/
     ├── recurrentPCC/...
     └── staticPCC/...
 ```
+### Attribution
+
+Portions of this software were developed by Bryce Rogers at Oregon State University
+in connection with graduate research, as well as by Monica Yin-Chen Li at the University of Connecticut in connection with graduate research. Additional, non-academic development by B.R. took place after 2025.
+
+This statement describes the project's history and does not identify the
+copyright holder, grant reuse rights, or imply endorsement by Oregon State
+University or the University of Connecticut.
